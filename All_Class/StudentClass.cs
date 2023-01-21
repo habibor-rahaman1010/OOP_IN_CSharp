@@ -19,16 +19,16 @@ class Student<Type>
 
     public void DisplayInfo()
     {
-        Console.WriteLine("ID: ", this.id);
-        Console.WriteLine("Name: ", this.name);
-        Console.WriteLine("Email ", this.email);
-        Console.WriteLine("Phone", this.phone);
-        Console.WriteLine("Department: ", this.department);
+        Console.WriteLine("ID: " + this.id);
+        Console.WriteLine("Name: " + this.name);
+        Console.WriteLine("Email " + this.email);
+        Console.WriteLine("Phone" + this.phone);
+        Console.WriteLine("Department: " + this.department);
 
         Console.WriteLine("Subjects: ");
         foreach (var item in this.subjects)
         {
-            Console.WriteLine("\tb", item);
+            Console.WriteLine("\t" + item);
         }
     }
 }
