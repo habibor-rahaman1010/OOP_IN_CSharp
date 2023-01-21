@@ -17,16 +17,16 @@ class Student<Type>
         this.subjects = subjects;
     }
 
-    public void DisplayInfo()
+    public void DisplayInfo<T>(Student<T> data)
     {
-        Console.WriteLine("ID: " + this.id);
-        Console.WriteLine("Name: " + this.name);
-        Console.WriteLine("Email " + this.email);
-        Console.WriteLine("Phone" + this.phone);
-        Console.WriteLine("Department: " + this.department);
+        Console.WriteLine("ID: " + data.id);
+        Console.WriteLine("Name: " + data.name);
+        Console.WriteLine("Email " + data.email);
+        Console.WriteLine("Phone" + data.phone);
+        Console.WriteLine("Department: " + data.department);
 
         Console.WriteLine("Subjects: ");
-        foreach (var item in this.subjects)
+        foreach (var item in data.subjects)
         {
             Console.WriteLine("\t" + item);
         }
